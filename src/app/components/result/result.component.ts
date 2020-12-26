@@ -13,7 +13,7 @@ import { GoogleResponse } from '../GoogleResponse.model';
 })
 export class ResultComponent implements OnInit, OnDestroy {
 
-  results: GoogleResponse ;
+  results: GoogleResponse = <GoogleResponse> {}; 
   subs: Subscription[] = [];
   term: any ;
 
